@@ -1,0 +1,82 @@
+/*nagłówek*/
+
+header {
+    background-color: #f8f9fa; /* Jasny kolor tła nagłówka */
+    color: #333; /* Ciemniejszy kolor tekstu dla lepszej czytelności */
+    padding: 1em 2em; /* Padding dla lepszej przestrzeni wewnętrznej */
+    margin-top: 10px;
+    border-bottom: 2px solid #ddd; /* Delikatna linia oddzielająca nagłówek od reszty */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Cień dla efektu głębi */
+    border-radius: 8px; /* Zaokrąglone rogi nagłówka */
+    display: flex; /* Umożliwia elastyczne ustawianie elementów wewnętrznych */
+    align-items: center; /* Wyśrodkowuje elementy wewnętrzne w pionie */
+    justify-content: space-between; /* Rozmieszcza elementy wewnętrzne na przeciwnych końcach */
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-size: 2em; /* Powiększa czcionkę tytułu */
+    font-weight: bold; /* Ustawia pogrubienie czcionki */
+}
+header a {
+    text-decoration: none;
+}
+#weather{
+    color:#000000
+
+}
+h1 a {
+    text-decoration: none;
+    color: #000; /* Initial color */
+    display: inline-block;
+    background: linear-gradient(90deg, #ffe600, #0059ff, #0000ff); /* Gradient colors */
+    background-size: 200% 100%;
+    background-position: -100% 0;
+    transition: background-position 0.8s ease;
+    
+    /* Standard properties */
+    background-clip: text; /* Defines how background is clipped to the text */
+    text-fill-color: transparent; /* Makes text color transparent to show the background */
+
+    /* WebKit-specific properties for compatibility */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    
+    padding: 0 5px;
+}
+
+
+h1 a:hover {
+    background-position: 100% 0;
+}
+
+nav {
+    font-size: 1em; /* Rozmiar czcionki dla elementów nawigacyjnych */
+}
+@font-face {
+    font-family: 'New Amsterdam';
+    src: url('fonts/NewAmsterdam-Regular.ttf') format('truetype'); /* Upewnij się, że ścieżka jest poprawna */
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav a {
+    color: #0075af; /* Kolor linków */
+    text-decoration: none; /* Usuwa podkreślenie linków */
+    margin: 0 15px; /* Marginesy dla odstępów między linkami */
+    font-family: 'New Amsterdam', sans-serif; 
+    font-weight: bold;
+
+    
+}
+/*body*/
+
+
+body {
+    min-height: 100vh; /* Upewnia się, że body rozciąga się na pełną wysokość okna przeglądarki */
+    margin-top: 2em; /* Usuwa domyślne marginesy */
+    background: linear-gradient(to bottom, rgb(194, 248, 248), rgb(255, 255, 255));
+}
+
+
