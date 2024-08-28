@@ -15,9 +15,8 @@
     <header>
         <h1> <a id="weather" href="#main">Weather! </a></h1>
         <nav>
-            <a href="#home">Strona Główna</a>
-            <a href="#about">O Nas</a>
-            <a href="#contact">Kontakt</a>
+            <a href="#home">Main page</a>
+            <a href="#contact">contact</a>
         </nav>
     </header>
     <div class="container-fluid m-4">
@@ -25,10 +24,10 @@
             <tbody>
                 <tr class="table-info">
                     <td class="align-middle">
-                        Zdj
+                        Lokalizacja
                     </td>
                     <td class="align-middle">
-                        Warszawa
+                        <span id="local"></span>
                     </td>
                 </tr>
                 <tr class="table-info">
@@ -36,7 +35,7 @@
                         Temperatura:
                     </td>
                     <td class="align-middle">
-                        <span id="temp"></span>
+                        <a><span id="temp"></span>°C</a>
                     </td>
                 </tr>
                 <tr class="table-info">
@@ -44,7 +43,7 @@
                         Wilgotność:
                     </td>
                     <td class="align-middle">
-                        <span id="humidity"></span>
+                        <a><span id="humidity"></span>%</a>
                     </td>
                 </tr>
                 <tr class="table-info">
@@ -52,7 +51,7 @@
                         Ciśnienie:
                     </td>
                     <td class="align-middle">
-                        <span id="pressure"></span>
+                        <a><span id="pressure"></span> hPa</a>
                     </td>
                 </tr>
                 <tr class="table-info">
@@ -68,7 +67,7 @@
                         Szybkość wiatru:
                     </td>
                     <td class="align-middle">
-                        <span id="windSpeed"></span>
+                        <a><span id="windSpeed"></span> kM/h</a>
                     </td>
                 </tr>
                 <tr class="table-info">
