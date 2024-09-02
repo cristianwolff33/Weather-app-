@@ -29,5 +29,4 @@ Weather App to prosta aplikacja internetowa, która wykorzystuje API OpenWeather
 
 1. **Sklonuj repozytorium**:
 
-   ```bash
-   git clone https://github.com/TwojeRepozytorium/weather-app.git
+   ```bash zsh   git clone https://github.com/TwojeRepozytorium/weather-app.git
