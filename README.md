@@ -29,4 +29,43 @@ Weather App to prosta aplikacja internetowa, która wykorzystuje API OpenWeather
 
 1. **Sklonuj repozytorium**:
 
-   ```bash zsh   git clone https://github.com/TwojeRepozytorium/weather-app.git
+   ```git clone https://github.com/TwojeRepozytorium/weather-app.git```
+
+2. **Przejdź do katalogu projektu**:
+
+```cd weather-app```
+
+3. **Otwórz plik weather.html w przeglądarce**:
+
+- **Możesz uruchomić lokalny serwer lub po prostu otworzyć plik weather.html w przeglądarce.**
+
+## API
+
+**Aplikacja korzysta z API OpenWeatherMap do pobierania danych pogodowych. Aby móc korzystać z aplikacji, potrzebujesz własnego klucza API. Klucz API można uzyskać, rejestrując się na stronie OpenWeatherMap**.
+
+**Klucz API jest przechowywany w zmiennej apiKey w pliku code.js:**
+
+```const apiKey = "TWÓJ_KLUCZ_API";```
+
+## Struktura projektu
+
+- **`index.html`**: Główny plik HTML zawierający strukturę strony.
+- **`style.css`**: Plik CSS zawierający stylizacje strony.
+- **`code.js`**: Plik JavaScript zawierający logikę aplikacji (pobieranie danych z API, aktualizacja interfejsu użytkownika).
+- **`fonts/`**: Katalog zawierający niestandardowe czcionki używane w aplikacji.
+
+## Stylizacje
+
+Aplikacja korzysta z frameworka Bootstrap 5 do podstawowej stylizacji, co umożliwia responsywne i estetyczne wyświetlanie treści. Dodatkowe stylizacje zostały dodane w pliku `style.css`, aby nadać aplikacji unikalny wygląd.
+
+## Dalszy rozwój
+
+Możliwe kierunki rozwoju aplikacji:
+
+- Dodanie prognozy pogody na kilka dni do przodu.
+- Wprowadzenie obsługi wielu lokalizacji.
+- Dodanie opcji wyboru jednostek (Celsiusz/Fahrenheit).
+
+## Autor
+
+**Krystian Borys** - [cristianwolff33](https://github.com/cristianwolff33)
