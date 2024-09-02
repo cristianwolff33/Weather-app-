@@ -33,23 +33,32 @@ function getWeatherData() {
 
 function updateWeatherData(data){
     const temp = data.main.temp;
-    const local = data.name;
     const humidity = data.main.humidity;
     const pressure = data.main.pressure;
     const cloudy = data.weather[0].description;
     const windSpeed = data.wind.speed;
     const sunRise = new Date(data.sys.sunrise * 1000);
     const sunSet = new Date(data.sys.sunset * 1000);
+    const city = data.name;
 
 
 
     document.getElementById("temp").innerHTML = temp;
-    document.getElementById("local").innerHTML = local;
     document.getElementById("humidity").innerHTML = humidity;
     document.getElementById("pressure").innerHTML = pressure;
     document.getElementById("cloudsPerc").innerHTML = cloudy;
     document.getElementById("windSpeed").innerHTML = windSpeed;
-    document.getElementById("sunRise").innerHTML = sunRise;
-    document.getElementById("sunSet").innerHTML = sunSet;
+    document.getElementById("sunRise").innerHTML = sunRise.getHours() + ":" + sunRise.getMinutes();
+    document.getElementById("sunSet").innerHTML = sunSet.getHours() + ":" + sunSet.getMinutes();
+
+
+    let imgUrl = "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png"; 
+    document.getElementById("currentWeatherImg").setAttribute("src", imgUrl);
+
+    const locationLink = document.getElementById("locationLink");
+    locationLink.innerHTML = city;
+    locationLink.href = `https://openstreetmap.org/#map=9/${lat}/${long}`;
+
+
 };
 
